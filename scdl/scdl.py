@@ -706,7 +706,6 @@ def set_metadata(track, filename, album=None):
         audio = mutagen.File(filename, easy=True)
         audio['title'] = track['title']
         audio['artist'] = track['artist']
-        if album: audio['album'] = album
         if track['genre']: audio['genre'] = track['genre']
         if track['permalink_url']: audio['website'] = track['permalink_url']
         if track['date']: audio['date'] = track['date']

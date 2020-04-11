@@ -4,6 +4,11 @@
 This script is able to download music from SoundCloud and set id3tag to the downloaded music.
 Compatible with Windows, OS X, Linux.
 
+## Changes from main repo
+
+Removed the logic that adds the album tag. This was giving problems where VLC
+and other media players would show the same album for all songs from the same
+artist
 
 ## System requirements
 
@@ -11,7 +16,9 @@ Compatible with Windows, OS X, Linux.
 * ffmpeg
 
 ## Installation Instructions
-https://github.com/flyingrub/scdl/wiki/Installation-Instruction
+```
+sudo python3 setup.py install
+```
 
 ## Examples:
 ```
